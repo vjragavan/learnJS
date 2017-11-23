@@ -22,7 +22,7 @@ var todoList = {
     addTodo: function(todoText) {
         this.todos.push({
             todoText: todoText,
-            completed: false,
+            completed: false
         });
         this.displayTodos();
     },

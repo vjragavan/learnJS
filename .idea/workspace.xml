@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb462817-898d-4cb6-9c5d-2ce1e0c83e6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todos/todo_v4.js" afterPath="$PROJECT_DIR$/todos/todo_v4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/todos/todo_v4.js" afterPath="$PROJECT_DIR$/todos/todos_v4.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo_v4.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/todos/todo_v4.js">
+      <file leaf-file-name="todos_v4.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/todos/todos_v4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="576">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -76,6 +76,7 @@
         <option value="$PROJECT_DIR$/todos/todos_v2.js" />
         <option value="$PROJECT_DIR$/todos/todos_v3.js" />
         <option value="$PROJECT_DIR$/todos/todo_v4.js" />
+        <option value="$PROJECT_DIR$/todos/todos_v4.js" />
       </list>
     </option>
   </component>
@@ -152,12 +153,12 @@
       <updated>1510025011514</updated>
       <workItem from="1510025012832" duration="347000" />
       <workItem from="1510076206562" duration="1000" />
-      <workItem from="1511383244616" duration="4328000" />
+      <workItem from="1511383244616" duration="4531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4676000" />
+    <option name="totallyTimeSpent" value="4879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="840" y="0" width="840" height="1050" extended-state="0" />
@@ -264,10 +265,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todos/todo_v4.js">
+    <entry file="file://$PROJECT_DIR$/todos/todos_v4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="576">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding />
         </state>
       </provider>
