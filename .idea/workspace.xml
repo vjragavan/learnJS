@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb462817-898d-4cb6-9c5d-2ce1e0c83e6b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todos/v1/todos.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todos/todos_v2.js" afterPath="$PROJECT_DIR$/todos/todos_v2.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,21 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="todos_v1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="todos_v1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todos/todos_v1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todos_v2.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="todos_v2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todos/todos_v2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="24">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,6 +53,7 @@
       <list>
         <option value="$PROJECT_DIR$/todos/v2/todos_v2.js" />
         <option value="$PROJECT_DIR$/todos/v1/todos.js" />
+        <option value="$PROJECT_DIR$/todos/todos_v2.js" />
       </list>
     </option>
   </component>
@@ -141,12 +142,12 @@
       <updated>1510025011514</updated>
       <workItem from="1510025012832" duration="347000" />
       <workItem from="1510076206562" duration="1000" />
-      <workItem from="1511383244616" duration="906000" />
+      <workItem from="1511383244616" duration="2950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1254000" />
+    <option name="totallyTimeSpent" value="3298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="840" y="0" width="840" height="1050" extended-state="0" />
@@ -247,18 +248,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todos/todos_v2.js">
+    <entry file="file://$PROJECT_DIR$/todos/todos_v1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todos/todos_v1.js">
+    <entry file="file://$PROJECT_DIR$/todos/todos_v2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
