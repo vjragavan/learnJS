@@ -21,12 +21,18 @@ var todoList = {
 
     toggleCompleted: function(position) {
         this.todos[position].completed = !this.todos[position].completed;
+    },
+
+    updateTodo: function(position, todoText) {
+        this.todos[position].todoText = todoText;
     }
 };
 
 todoList.addTodo('Test1');
 todoList.addTodo('Test2');
 todoList.addTodo('Test3');
+todoList.displayTodos();
+todoList.updateTodo(1, 'Test5');
 todoList.displayTodos();
 todoList.toggleCompleted(2);
 todoList.deleteTodo(1);

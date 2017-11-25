@@ -15,11 +15,17 @@ var todoList = {
     deleteTodo: function(position) {
         this.todos.splice(position, 1);
     },
+
+    updateTodo: function(position, todoText) {
+        this.todos[position] = todoText;
+    }
 };
 
 
-todolist.displayTodos();
-todolist.addTodo('8');
-todolist.displayTodos();
-todolist.deleteTodo(2);
-todolist.displayTodos();
+todoList.displayTodos();
+todoList.addTodo('8');
+todoList.displayTodos();
+todoList.updateTodo(0, 'newTodo');
+todoList.displayTodos();
+todoList.deleteTodo(2);
+todoList.displayTodos();

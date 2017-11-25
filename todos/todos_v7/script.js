@@ -1,4 +1,4 @@
-// Code goes here
+// Added handlers instead of adding event listeners
 
 var todoList = {
 
@@ -34,6 +34,7 @@ var todoList = {
 
     toggleCompleted: function(position) {
         this.todos[position].completed = !this.todos[position].completed;
+        this.displayTodos();
     },
 
     updateTodo: function(position, todoText) {
@@ -52,24 +53,46 @@ var todoList = {
 
         //case 1 : if all are completed, mark them false
         if (completed === totalTodos) {
-            for (var i=0; i<totalTodos; i++)
+            for (i=0; i<totalTodos; i++)
                 this.todos[i].completed = false;
         }
         else {
-            for (var i=0; i<totalTodos; i++)
+            for (i=0; i<totalTodos; i++)
                 this.todos[i].completed = true;
         }
 
         this.displayTodos();
+    },
+};
+
+var handler = {
+    displayTodos: function() {
+        todoList.displayTodos();
+    },
+    toggleAll: function() {
+        todoList.toggleAll();
+    },
+    addTodo: function() {
+        var addTodoTextField = document.getElementById('addTodoTextField');
+        todoList.addTodo(addTodoTextField.value);
+        addTodoTextField.value = '';
+    },
+    updateTodo: function() {
+        var changeTodoTextField = document.getElementById('changeTodoTextField');
+        var updatePositionTextField = document.getElementById('updatePositionTextField');
+        todoList.updateTodo(updatePositionTextField.valueAsNumber, changeTodoTextField.value);
+        changeTodoTextField.value = '';
+        updatePositionTextField.value = '';
+    },
+    deleteTodo: function() {
+        var deletePositionTextField = document.getElementById('deletePositionTextField');
+        todoList.deleteTodo(deletePositionTextField.valueAsNumber);
+        deletePositionTextField.value = '';
+    },
+    toggleTodo: function() {
+        var togglePositionTextField = document.getElementById('togglePositionTextField');
+        todoList.toggleCompleted(togglePositionTextField.valueAsNumber);
+        togglePositionTextField.value = '';
     }
 
 };
-
-todoList.addTodo('Test1');
-todoList.addTodo('Test2');
-todoList.addTodo('Test3');
-todoList.updateTodo(1, 'Test5');
-todoList.toggleCompleted(2);
-todoList.toggleAll();
-todoList.toggleAll();
-todoList.deleteTodo(1);

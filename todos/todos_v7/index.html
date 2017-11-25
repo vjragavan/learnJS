@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>My Todo List</h1>
+    <button onclick="handler.displayTodos()">Display Todos</button>
+    <button onclick="handler.toggleAll()">Toggle All</button>
+    <div>
+        <button onclick="handler.addTodo()">Add Todo</button>
+        <input type="test" id="addTodoTextField">
+    </div>
+    <div>
+        <button onclick="handler.updateTodo()">Update Todo</button>
+        <input type="number" id="updatePositionTextField">
+        <input type="text" id="changeTodoTextField">
+    </div>
+    <div>
+        <button onclick="handler.deleteTodo()">Delete Todo</button>
+        <input type="number" id="deletePositionTextField">
+    </div>
+    <div>
+        <button onclick="handler.toggleTodo()">Toggle Todo</button>
+        <input type="number" id="togglePositionTextField">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

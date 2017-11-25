@@ -1,4 +1,4 @@
-// Code goes here
+// Added addEventListener
 
 var todoList = {
 
@@ -34,6 +34,11 @@ var todoList = {
 
     toggleCompleted: function(position) {
         this.todos[position].completed = !this.todos[position].completed;
+    },
+
+    updateTodo: function(position, todoText) {
+        this.todos[position].todoText = todoText;
+        this.displayTodos();
     },
 
     toggleAll: function() {
