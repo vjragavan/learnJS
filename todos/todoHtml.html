@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        ul {
+            list-style: none;
+            float: left;
+            width: 40%;
+            margin: 25px;
+            padding: 10px;
+            border: solid;
+            background-color: grey;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        li {
+            font-weight: normal;
+            padding: 5px;
+        }
+        input[type=text] {
+            width: 50%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100px;
+            padding: 10px;
+            margin: 25px;
+        }
+        div {
+            padding: 10px;
+            margin: 25px;
+        }
+        span {
+            padding: 5px;
+        }
+    </style>
+
+    <title>Vijay's Simple Todos</title>
+</head>
+
+<body>
+<div>
+    <input type="text" id="todoText"/>
+    <button id="addButton">Add</button>
+</div>
+<ul id="todoList"> Todo </ul>
+<ul id="doneList"> Done </ul>
+</body>
+
+<script>
+    (function(){
+        var todoText = document.getElementById('todoText');
+        var addButton = document.getElementById('addButton');
+        var todoList = document.getElementById('todoList');
+        var doneList = document.getElementById('doneList');
+
+        todoText.addEventListener('keyup', checkEnter);
+        addButton.addEventListener('click', addNewTodo);
+
+        /**
+         * create a HTML element which will be appended to the TodoList
+         * @param {string} todoTextVal
+         * @returns {HTMLElement} el
+         */
+        function getElementToAppend(todoTextVal) {
+
+            var el = document.createElement('li');
+            var checkBox = document.createElement('input');
+            var todoSpan = document.createElement('span');
+
+            checkBox.type = 'checkbox';
+            checkBox.addEventListener('change', moveTodoAround);
+            todoSpan.textContent = todoTextVal;
+
+            el.appendChild(checkBox);
+            el.appendChild(todoSpan);
+
+            return el;
+        }
+
+        /**
+         * adds a new ToDoItem in the ToDoList
+         */
+        function addNewTodo() {
+
+            var todoTextVal = todoText.value.trim();
+            if (todoTextVal.length > 0) {
+                todoList.appendChild(getElementToAppend(todoTextVal));
+                todoText.value = '';
+            }
+            todoText.focus();
+        }
+
+        /**
+         * Can move the TodoItem between ToDoList and DoneList
+         * depending on which list it belongs to now.
+         */
+        function moveTodoAround() {
+
+            var checkBox = event.target;
+            var el = checkBox.parentElement;
+            var listParent = el.parentElement;
+
+            if (listParent.getAttribute('id') === 'todoList') {
+                doneList.appendChild(el);
+            }
+            else {
+                todoList.appendChild(el);
+            }
+            todoText.focus();
+        }
+
+        /**
+         * If the key pressed is Enter key, then add the text as a ToDoItem
+         * @param keyPressed
+         */
+        function checkEnter(keyPressed) {
+
+            if (keyPressed.key === 'Enter')
+                addNewTodo();
+        }
+
+
+
+    }())
+</script>
+</html>
